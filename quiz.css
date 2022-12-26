@@ -1,0 +1,144 @@
+
+.preloadpng{
+ position: fixed;	
+ top: 0%;
+ left: 0%;
+}
+.ring {
+ position: absolute;
+ top: 31.5%;
+ left: 41%;
+ width: 320px;
+ height: 320px;
+ border-radius: 50%;
+ animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+ 0%{
+  transform: rotate(0deg);
+  box-shadow: 1px 7px 2px #06d2f7;
+   }
+ 50%{
+	transform: rotate(180deg);
+	box-shadow: 1px 7px 2px #db0bd1;
+   }
+ 100%{
+	transform: rotate(360deg);
+	box-shadow: 1px 7px 2px #3cc804;
+   }
+}
+
+.ring:before{
+ position: absolute;
+ content: '';
+ left: 0;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ border-radius: 50%;
+ box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+.harry{
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;}
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+
+*{
+font-family: Phantomsans, sans-serif;
+align-items: center;
+align-content: center;
+text-align: center;
+justify-content: center;
+}
+
+.background {
+position: fixed;
+width: 100%;
+height: 100%;	
+right:0;
+bottom: 0;
+z-index: -1;
+}
+.choice-container{
+margin-left: 10%;  
+margin-right: 10%;      
+display: flex;
+border-radius: 10px;
+font-size: 20px;
+margin-top: 1.5rem;
+margin-bottom: 1rem;
+background: whitesmoke;
+height: 50px;
+opacity: 0.9;
+}
+
+.choice-container:hover{
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, .3) 9px 15px 15px -12px;
+transform: scale(1.02);
+transition: transform 1s;
+}
+
+.choice-prefix{
+padding: 20px;
+color: black;
+}
+
+.choice-text{
+padding: 20px;
+width: 100%;
+}
+
+.correct {
+background: linear-gradient(32deg, rgb(81, 243, 100) 0%, rgb(41, 232, 111) 100% );
+}
+
+.incorrect {
+background: linear-gradient(32deg, rgb(206, 33, 33)0%, rgb(224, 11, 11,1) 100%);
+}
+
+#hud {
+display: flex;
+justify-content: space-between;
+}
+
+.hud-prefix {
+text-align: center;
+font-size: 20px;
+margin-right: 100px;  
+
+}
+
+.hud-main-text {
+text-align: center;
+margin-right: 100px;  
+
+}
+
+#progressBar {
+margin-left: 100px;  
+width: 350px;
+height: 20px;
+border: 3px solid whitesmoke;
+border-radius: 40px;
+overflow: hidden;
+}
+
+#progressBarFull {
+height: 100%;
+background: whitesmoke;
+width: 0%;
+}

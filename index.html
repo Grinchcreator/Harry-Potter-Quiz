@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nae="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Harry Potter Quiz </title> 
+<link rel = "stylesheet" href=style.css>
+<link rel="icon" href="favicon.jpg" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class = "preload">
+  <div class = "ring">
+    <img src="preloader.png" class="preloadpng" alt="preload" width="320px" height="320px">
+  </div>
+</div>
+<div class="harry" id="harry">
+   <img src="background.jpg" alt="backgroundpicture" class="background">
+   <div class="startbox">
+     <p>WRITE YOUR NAME</p>
+     <input type="text" id="username" class="username" >
+     <img src="check.jpg" alt="check" class="check" id="check">
+     <div class="formBox">
+      <button id="btn" class="btn">SAVE</button>
+  </div>
+     <a class="start" id="start" href="quiz.html"> START</a>
+   </div>
+   <div id="msg">
+    <pre></pre>
+</div>
+  </div>
+
+<script src="addName.js"></script>
+
+<script src="preload.js"></script>
+</body>
+</html>
