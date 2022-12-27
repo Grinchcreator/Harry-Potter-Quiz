@@ -1,46 +1,61 @@
 
-
 .preloadpng{
- position: fixed;	
- top: 0%;
- left: 0%;
-}
-.ring {
- position: absolute;
- top: 31.5%;
- left: 41%;
- width: 320px;
- height: 320px;
- border-radius: 50%;
- animation: ring 2s linear infinite;
-}
-
-@keyframes ring {
- 0%{
-  transform: rotate(0deg);
-  box-shadow: 1px 7px 2px #06d2f7;
-   }
- 50%{
-	transform: rotate(180deg);
-	box-shadow: 1px 7px 2px #db0bd1;
-   }
- 100%{
-	transform: rotate(360deg);
-	box-shadow: 1px 7px 2px #3cc804;
-   }
-}
-
-.ring:before{
- position: absolute;
- content: '';
- left: 0;
- top: 0;
- height: 100%;
- width: 100%;
- border-radius: 50%;
- box-shadow: 0 0 5px rgba(255, 255, 255, .3);
-}
-
+  position: fixed;	
+  top: 0%;
+  left: 0%;
+ }
+ .ring {
+  position: absolute;
+  top: 31.5%;
+  left: 40.5%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+ }
+ 
+ @keyframes ring {
+  0%{
+   transform: rotate(0deg);
+   box-shadow: 1px 7px 2px #06d2f7;
+    }
+  50%{
+     transform: rotate(180deg);
+     box-shadow: 1px 7px 2px #db0bd1;
+    }
+  100%{
+     transform: rotate(360deg);
+     box-shadow: 1px 7px 2px #3cc804;
+    }
+ }
+ 
+ .ring:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+ }
+ 
+ .harry{
+ -webkit-animation-duration: 5s;
+ animation-duration: 5s;
+ -webkit-animation-fill-mode: both;
+ animation-fill-mode: both;
+ -webkit-animation-name: fadeIn;
+ animation-name: fadeIn;}
+ 
+ @-webkit-keyframes fadeIn {
+ 0% {opacity: 0;}
+ 100% {opacity: 1;}
+ }
+ @keyframes fadeIn {
+ 0% {opacity: 0;}
+ 100% {opacity: 1;}
+ }
 
 
 .background {
@@ -92,7 +107,7 @@ opacity: 0.8;}
   font-size: 15px;
   line-height: 1px;
   outline: none;
-  padding: .75rem;
+  padding: .65rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -102,7 +117,7 @@ opacity: 0.8;}
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 5px;
+  margin: 3px;
 }
 	
 .btn:hover {
@@ -113,6 +128,12 @@ opacity: 0.8;}
 .btn:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
-	
 
+.saveScoreBtn:hover{
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
 
+.saveScoreBtn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}

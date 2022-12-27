@@ -178,7 +178,7 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 5px;
+  margin: 20px;
 }
 	
 .btn:hover {

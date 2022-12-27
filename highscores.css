@@ -7,7 +7,7 @@
    .ring {
     position: absolute;
     top: 31.5%;
-    left: 41%;
+    left: 40.5%;
     width: 320px;
     height: 320px;
     border-radius: 50%;
@@ -101,6 +101,9 @@
       color: #41403e;
       cursor: pointer;
       display: inline-block;
+      position: fixed;
+      top: 70%;
+      left: 48.5%;
       font-family: Phantomsans, sans-serif;
       font-size: 15px;
       line-height: 1px;
@@ -128,12 +131,20 @@
     }
         
 #highScoresList {
+position: fixed;
 text-align: center;
 align-items: center;
 list-style: none;
 margin-bottom: 30px;
+justify-content: center;
+left: 46%;
+top: 53%;
 }
-
+#finalScore{
+position: fixed;
+top: 40%;
+left: 43%;
+}
 .high-score{
 font-size: 20px;
 margin-bottom: 5px;

@@ -10,22 +10,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
-   
+
+<div class = "preload">
+ <div class = "ring">
+<img src="preloader.png" class="preloadpng" alt="preload" width="320px" height="320px">
+ </div>  
+
 <div class="harry">
 <img src="background.jpg" alt="backgroundpicture" class="background">
 <div class="container">
  <div id="end" class="flex-center flex-column">
-    <h1 id="finalScore">0</h1>
-    <h2 id="user"></h2>
+    <h2 id="finalScore">0</h2>
+    <h3 id="user"></h3>
     <form class="end-form-container">
-    <h2 id="end-text"> Save your score! </h2> 
-    <button class="saveScoreBtn" type="button" id="saveScoreBtn" >Save</button>
+    <h3 id="end-text"> Save your score! </h3> 
+    <button class="saveScoreBtn" id="saveScoreBtn" type="button">Save</button>
     </form>
     <a href="quiz.html" class="btn"> Play Again</a>
     <a href="highscores.html" class="btn"> Leaderboard</a>
  </div>
 </div>
 </div>
+<script src="preload.js"></script>
 <script src="end.js"></script>
+
 </body>
 </html>
