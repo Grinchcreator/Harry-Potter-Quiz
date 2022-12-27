@@ -137,7 +137,7 @@ align-items: center;
 list-style: none;
 margin-bottom: 30px;
 justify-content: center;
-left: 42%;
+left: 46%;
 top: 53%;
 }
 #finalScore{
@@ -148,4 +148,31 @@ left: 43%;
 .high-score{
 font-size: 20px;
 margin-bottom: 5px;
+}
+
+@media screen and
+(max-device-width: 915px) {  
+.ring {
+top: 68px;
+left: 375.5px;}
+
+.container {
+margin-top: 0px;
+margin-left: 375px;
+}
+
+#finalScore{
+top: 23%;
+left: 43%;
+}
+
+#highScoresList{
+left: 46%;
+top: 43%;
+}
+
+.btn{
+left: 50%;
+top: 70%;
+}
 }

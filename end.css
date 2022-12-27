@@ -137,3 +137,15 @@ opacity: 0.8;}
 .saveScoreBtn:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
+
+@media screen and
+(max-device-width: 915px) {  
+.ring {
+top: 68px;
+left: 375.5px;}
+
+.container {
+  margin-top: 0px;
+  margin-left: 375px;
+}
+}

@@ -4,7 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    height: 98vh;
+  height: 98vh;
 	transition: opacity 9s ease;
 }
 
@@ -182,13 +182,22 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 	
 .btn:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
+box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+transform: translate3d(0, 2px, 0);
 }
 	
 .btn:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 	
-
-
+@media screen and
+(max-device-width: 915px) {  
+.startbox{
+margin-top: 0px;
+margin-left: 375px;
+}
+.ring {
+top: 68px;
+left: 375.5px;
+}
+}
