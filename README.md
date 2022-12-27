@@ -1,3 +1,3 @@
 # Harry-Potter-Quiz
-a simple but not too simple Harry Potter Quiz. 
-still working on it.. But overall it's fine
+A simple but not too simple Harry Potter Quiz. 
+Hope you can find it useful. Feel free to contribute and add you question related to Harry Potter universe! 
